@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
+    public Vector3 CamOffset = new Vector3(0f, 3f, 0f);
+    private Transform _target;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _target = GameObject.Find("Player").transform;
+
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        this.transform.position = _target.TransformPoint(CamOffset);
+        this.transform.LookAt(_target);
     }
 }
