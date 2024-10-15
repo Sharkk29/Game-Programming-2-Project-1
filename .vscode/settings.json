@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Game-Programming-2-Project-1.sln"
+    "dotnet.defaultSolution": "Game Programming 2 Project 1.sln"
 }
