@@ -18,11 +18,6 @@ public class Box : MonoBehaviour
         rb.velocity = initialVelocity;
     }
 
-     private void Update()
-    {
-        lastFrameVelocity = rb.velocity;
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         Bounce(collision.contacts[0].normal);
@@ -36,4 +31,35 @@ public class Box : MonoBehaviour
         Debug.Log("Out Direction: " + direction);
         rb.velocity = direction * Mathf.Max(speed, minVelocity);
     }
+     public Rigidbody2D RB;
+    public float Speed = 5;
+    void Update()
+    {
+        lastFrameVelocity = rb.velocity;
+        Vector2 vel = new Vector2(0,0);
+        if (Input.GetKey(KeyCode.RightArrow))
+       {
+        print("RightArrowPressed");
+        vel.x = Speed;
+       }
+        if (Input.GetKey(KeyCode.LeftArrow))
+       {
+        print("LeftArrowPressed");
+        vel.x = -Speed;
+       }
+         if (Input.GetKey(KeyCode.UpArrow))
+       {
+        print("UpArrowPressed");
+        vel.y = Speed;
+       }
+        if (Input.GetKey(KeyCode.DownArrow))
+       {
+        print("DownArrowPressed");
+        vel.y = -Speed;
+       }
+       // RB.velocity = vel;
+
+    }
+    
+      
 }
