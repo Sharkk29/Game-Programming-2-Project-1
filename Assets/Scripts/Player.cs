@@ -44,22 +44,19 @@ private void OnEnable()
         Vector2 vel = new Vector2(0,0);
         if (Input.GetKey(KeyCode.RightArrow))
        {
-        print("RightArrowPressed");
+        
         vel.x = Speed;
        }
         if (Input.GetKey(KeyCode.LeftArrow))
        {
-        print("LeftArrowPressed");
         vel.x = -Speed;
        }
          if (Input.GetKey(KeyCode.UpArrow))
        {
-        print("UpArrowPressed");
         vel.y = Speed;
        }
         if (Input.GetKey(KeyCode.DownArrow))
        {
-        print("DownArrowPressed");
         vel.y = -Speed;
        }
         RB.velocity = vel;

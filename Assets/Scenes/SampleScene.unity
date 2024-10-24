@@ -277,9 +277,9 @@ GameObject:
   m_Component:
   - component: {fileID: 48834770}
   - component: {fileID: 48834769}
-  - component: {fileID: 48834771}
   - component: {fileID: 48834772}
   - component: {fileID: 48834773}
+  - component: {fileID: 48834774}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -354,22 +354,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &48834771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48834768}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 692c1170fae2aef4a91ce45312721127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialVelocity: {x: 0, y: 0, z: 0}
-  minVelocity: 0
-  RB: {fileID: 48834772}
-  Speed: 10
 --- !u!50 &48834772
 Rigidbody2D:
   serializedVersion: 4
@@ -442,6 +426,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0620141, y: 1.0737094}
   m_EdgeRadius: 0
+--- !u!114 &48834774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48834768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825eeeceb47c96445bde2c17b10f9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &105188644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2365,6 @@ GameObject:
   m_Component:
   - component: {fileID: 749164635}
   - component: {fileID: 749164636}
-  - component: {fileID: 749164638}
   - component: {fileID: 749164639}
   m_Layer: 0
   m_Name: GameBorders
@@ -2424,50 +2419,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!68 &749164638
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749164634}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 26.938421, y: 22.017122}
-  - {x: -33.481354, y: 21.993717}
-  - {x: -33.40274, y: -27.576847}
-  - {x: 26.420597, y: -27.681269}
-  - {x: 27.053314, y: 22.017126}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &749164639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2859,7 +2810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 611436132}
-  remainingTime: 10
+  remainingTime: 60
 --- !u!114 &1158989208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3303,11 +3254,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1542617803}
-  - component: {fileID: 1542617807}
   - component: {fileID: 1542617808}
   - component: {fileID: 1542617811}
-  - component: {fileID: 1542617810}
-  - component: {fileID: 1542617809}
+  - component: {fileID: 1542617812}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -3334,22 +3283,6 @@ Transform:
   - {fileID: 205067901}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1542617807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542617802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19005a0707ba09f48ad96b438303faaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialVelocity: {x: 10, y: 10, z: 10}
-  minVelocity: 10
-  RB: {fileID: 0}
-  Speed: 5
 --- !u!50 &1542617808
 Rigidbody2D:
   serializedVersion: 4
@@ -3377,34 +3310,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1542617809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542617802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 692c1170fae2aef4a91ce45312721127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialVelocity: {x: 1, y: 0, z: 0}
-  minVelocity: 10
-  RB: {fileID: 1542617808}
-  Speed: 10
---- !u!114 &1542617810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542617802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3ab8a41159c1b48b2ea640f65fc5c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &1542617811
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -3451,6 +3356,22 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &1542617812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542617802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692c1170fae2aef4a91ce45312721127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialVelocity: {x: 0, y: 0, z: 0}
+  minVelocity: 10
+  RB: {fileID: 1542617808}
+  Speed: 15
 --- !u!1 &1689380467
 GameObject:
   m_ObjectHideFlags: 0
